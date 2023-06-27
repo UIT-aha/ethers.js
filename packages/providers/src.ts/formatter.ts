@@ -394,6 +394,7 @@ export class Formatter {
     }
 
     receipt(value: any): TransactionReceipt {
+        console.log('value is:', value);
         const result: TransactionReceipt = Formatter.check(this.formats.receipt, value);
 
         // RSK incorrectly implemented EIP-658, so we munge things a bit here for it
